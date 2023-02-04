@@ -42,9 +42,7 @@ class App
     id = gets.chomp.to_i
     puts 'Rentals:'
     @rental.each do |rent|
-      if rent.person.id == id
-        puts " Date: #{rent.date} Book: #{rent.book.title} Author: #{rent.book.author} "
-      end
+      puts " Date: #{rent.date} Book: #{rent.book.title} Author: #{rent.book.author}" if rent.person.id == id
       puts "\n"
     end
   end
