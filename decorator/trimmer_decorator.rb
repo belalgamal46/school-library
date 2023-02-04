@@ -1,4 +1,4 @@
-require './base_decorater'
+require_relative './base_decorater'
 
 # Trimmer Decorator class
 class TrimmerDecorator < BaseDecorater
